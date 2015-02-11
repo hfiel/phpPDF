@@ -1,4 +1,5 @@
-<? require_once("lib/tcpdf/tcpdf.php");
+<?php
+require_once("lib/tcpdf/tcpdf.php");
 
 class ParametrizedPDF extends TCPDF {
 
@@ -602,3 +603,4 @@ class ParametrizedPDF extends TCPDF {
 		}
 	}
 }
+?>
