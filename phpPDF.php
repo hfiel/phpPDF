@@ -195,7 +195,7 @@ $keepFile = getOptionalParam("keepFile", $params, false);
 
 // We remove the moved uploaded files.
 foreach($_FILES as $inputName => $fileInfo) {
-	unlink(sys_get_temp_dir()."/".$fileInfo["name"]);
+	@unlink(sys_get_temp_dir()."/".$fileInfo["name"]);
 }
 
 
